@@ -1,3 +1,6 @@
 #!/bin/bash
 
-curl --include --request GET 'http://localhost:4741/workouts' \
+curl 'http://localhost:4741/workouts' \
+  --include \
+  --request GET \
+  --header "Authorization: Token token=${TOKEN}" \

@@ -1,9 +1,9 @@
-class WorkoutsController < ApplicationController
+class WorkoutsController < ProtectedController
   before_action :set_workout, only: [:show, :update, :destroy]
 
   # GET /workouts
   def index
-    @workouts = Workout.all
+    @workouts = current_user.workouts.all
 
     render json: @workouts
   end
@@ -15,7 +15,7 @@ class WorkoutsController < ApplicationController
 
   # POST /workouts
   def create
-    @workout = Workout.new(workout_params)
+    @workout = current_user.workouts.build(workout_params)
 
     if @workout.save
       render json: @workout, status: :created
@@ -41,7 +41,7 @@ class WorkoutsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_workout
-      @workout = Workout.find(params[:id])
+      @workout = current_user.workouts.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
