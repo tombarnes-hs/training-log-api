@@ -8,6 +8,12 @@ The client repo can be found [here](https://github.com/TomG84/training-log-clien
 * The deployed Training Log API can be found [here](https://frozen-sierra-35636.herokuapp.com/).
 * The deployed Training Log App can be found [here](https://tomg84.github.io/training-log-client/).
 
+## Technologies Used
+* Ruby
+* Rails
+* PostgreSQL
+* curl-scripts
+
 ## Traing Log API
 
 Find below the documentation for using this API. The Authentication resource will be followed by the Workouts resource.
