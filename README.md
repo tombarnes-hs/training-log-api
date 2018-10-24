@@ -12,9 +12,9 @@ The client repo can be found [here](https://github.com/TomG84/training-log-clien
 
 Find below the documentation for using this API. The Authentication resource will be followed by the Workouts resource.
 
-![ERD](https://imgur.com/LCANsXZ "User - Workouts Relationship Diagram")
-
 Scripts are included in [`curl-scripts`](curl-scripts) to test built-in actions. You can test user authentication and CRUD to the workouts resource.
+
+[Entity Relationship Diagram](https://imgur.com/LCANsXZ "User - Workouts Relationship Diagram")
 
 ### Authentication
 
